@@ -1,0 +1,18 @@
+version: "3.2"
+
+services:
+
+  sped-efd:
+    image: sped_pva
+    container_name: sped-pva
+    volumes:
+      - ./recursos:/home/sped/pva/recursos
+      - ./arquivos:/home/sped/pva/arquivos
+    environment:
+      - DISPLAY=host.docker.internal:0
+    restart: "no"
+    command: ["java", "-jar", "efdcontribuicoes.jar"]
+
+
+# para executar ...
+# $> docker-compose up
