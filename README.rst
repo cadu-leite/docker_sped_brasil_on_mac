@@ -8,7 +8,7 @@ para executar o software Java,  "Escrituração Fiscal Digital - EFDICMS IPI", e
 
 O sistema da receita é baixado pelo Dockerfile no "build"
 
-    URL: http://www.receita.fazenda.gov.br/publico/programas/Sped/SpedFiscal/PVA_EFD_linux-2.6.8_x64.jar
+    URL: http://www.receita.fazenda.gov.br/publico/programas/SpedPisCofinsPVA/EFDContribuicoes_linux_x64-4.0.1.jar
 
 O Software da receita foi preparado para rodar em linux, e tem uma interface gráfica, então é necessário "expor" o X11 do Mac para que o software funcione no Docker, isso é feito atraves do XQuartz + socat.
 
